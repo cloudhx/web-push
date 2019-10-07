@@ -9,7 +9,7 @@ const check = () => {
 
 const registerServiceWorker = async () => {
     console.log('register service worker')
-    const swRegistration = await navigator.serviceWorker.register('service.js'); 
+    const swRegistration = await navigator.serviceWorker.register('service.js');
     return swRegistration;
 }
 
@@ -25,7 +25,7 @@ const requestNotificationPermission = async () => {
     }
 }
 
-const main = async () => { 
+const main = async () => {
     check();
     const permission = await requestNotificationPermission();
     const swRegistration = await registerServiceWorker();

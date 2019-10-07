@@ -48,7 +48,7 @@ app.get('/send-notification', (req, res) => {
   console.log(subscription)
   const message = '瓜叔下午好！'
   sendNotification(subscription, message)
-  res.json({ message: 'message sent' })
+  res.json({ message: 'message sent to 瓜叔' })
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
